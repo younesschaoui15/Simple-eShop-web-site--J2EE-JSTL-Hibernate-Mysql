@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/eshop_db</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <!--update/create-drop/validate/-->
+  <property name="hibernate.enable_lazy_load_no_trans">true</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.transaction.auto_close_session">true</property>
+  <property name="hibernate.connection.pool_size">100</property>
+  <mapping class="MVC.Modele.Article"/>
+  <mapping class="MVC.Modele.Client"/>
+  <mapping class="MVC.Modele.Cmd_Art_PK"/>
+  <mapping class="MVC.Modele.Cmd_Art"/>
+  <mapping class="MVC.Modele.Commande"/>
+ </session-factory>
+</hibernate-configuration>

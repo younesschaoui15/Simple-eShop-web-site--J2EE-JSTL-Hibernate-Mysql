@@ -1,0 +1,2 @@
+s'il vous plait avant de deployer le projet sur TOMCAT, 
+activer INTERNET chez vous, pour que la mise en forme du projet soit exacte.
